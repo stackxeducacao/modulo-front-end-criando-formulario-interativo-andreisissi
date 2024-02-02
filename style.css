@@ -1,0 +1,162 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-color: rgb(89, 89, 179);
+   --secondary-color: rgb(23, 23, 57);
+   --third-color: whitesmoke;
+   /* --label-color: rgb(252, 91, 91); */
+}
+
+body {
+   background: var(--primary-color);
+   color: var(--third-color);
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 20px;
+}
+
+.section_container {
+   background-color: var(--secondary-color);
+   width: 35rem;
+   margin: 6rem auto;
+   border-radius: 15px;
+   padding: 1rem 0;
+}
+
+.div_container {
+   width: 95%;
+   border: 4px solid var(--primary-color);
+   border-radius: 15px;
+   margin: 20px auto;
+   padding: 40px 20px;
+}
+
+.titulo_h1 {
+   position: absolute;
+   justify-content: center;
+   text-align: center;
+
+   width: 22rem;
+   height: 45px;
+   margin-left: 7rem;
+   padding: 10px;
+
+   border-radius: 5px;
+   background-color: var(--primary-color);
+   font-size: 30px;
+}
+
+.container_input_user {
+   width: 100%;
+   margin: 10px 0;
+   position: relative;
+}
+
+.container_input_user label {
+   position: absolute;
+   top: 8px;
+   left: 0;
+   cursor: pointer;
+}
+
+.inputUser {
+   width: 100%;
+   height: 30px;
+   background: none;
+   border: none;
+   outline: none;
+
+   border-bottom: 1px solid var(--third-color);
+   color: var(--third-color);
+   font-size: 20px;
+
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+
+.inputUser:focus,
+.input_endereco:focus {
+   border-bottom: 2px solid var(--primary-color);
+}
+
+.inputUser:focus ~ label,
+.inputUser:valid ~ label {
+   transform: translateY(-25px);
+   transition: ease-in .3s;
+   font-size: 15px;
+   color: var(--primary-color);
+}
+
+#paragrafo {
+   margin: 25px 0 20px 0;
+}
+
+.container_gender {
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+
+#data_nasc {
+   margin: 15px;
+   border-radius: 5px;
+   outline: none;
+   width: 150px;
+   height: 35px;
+   font-size: 15px;
+   padding: 0 10px;
+   cursor: pointer;
+}
+
+.container_endereco {
+   position: relative;
+   margin: 10px 0;
+}
+
+.input_endereco {
+   width: 100%;
+   height: 30px;
+   background: none;
+   border: none;
+   outline: none;
+
+   border-bottom: 1px solid var(--third-color);
+   color: var(--third-color);
+   font-size: 20px;
+
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.container_endereco label {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 8px;
+}
+
+.input_endereco:focus ~ label,
+.input_endereco:valid ~ label {
+   transform: translateY(-25px);
+   color: var(--primary-color);
+   font-size: 15px;
+   transition: ease-in .3s;
+}
+
+.form_btn {
+   width: 70%;
+   height: 40px;
+   margin-left: 5rem;
+   border-radius: 5px;
+   border: none;
+   background-color: var(--primary-color);
+   font-size: 20px;
+   color:  var(--third-color);
+   cursor: pointer;
+}
+
+.form_btn:hover {
+   box-shadow: 1px 1px 2px var(--third-color);
+}
