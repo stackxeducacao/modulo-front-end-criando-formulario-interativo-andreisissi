@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+   <title>Formulário</title>
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+   <section class="section_container">
+      <h1 class="titulo_h1">Formulário de Inscrição</h1>
+
+      <div class="div_container">
+         <form action="" method="get">
+<!-- INPUT USUARIO -->
+            <div class="container_input_user">
+               <input type="text" id="name" class="inputUser" name="name" required>
+               <label for="name">Nome Completo</label>
+            </div>
+
+            <div class="container_input_user">
+               <input type="text" id="email" class="inputUser" name="email" required>
+               <label for="email">E-mail</label>
+            </div>
+
+            <div class="container_input_user">
+               <input type="tel" id="fone" class="inputUser" name="fone" required>
+               <label for="fone">Telefone</label>
+
+            </div>
+<!-- INPUT GENERO -->
+            <p id="paragrafo">Sexo:</p>
+
+            <div class="container_gender">
+               <input type="radio" id="feminine" name="gender" class="gender" name="feminine" required>
+               <label for="feminine" style="cursor: pointer;">Feminino</label>
+            </div>
+
+            <div class="container_gender">
+               <input type="radio" id="masculine" name="gender" class="gender" name="masculine" required>
+               <label for="masculine" style="cursor: pointer;">Masculino</label>
+            </div>
+
+            <div class="container_gender">
+               <input type="radio" id="other" name="gender" class="gender" name="other" required>
+               <label for="other" style="cursor: pointer;">Outro</label>
+            </div>
+
+            <label for="data_nasc">Data de Nascimento:</label>
+            <input type="date" id="data_nasc">
+
+<!-- INPUT ENDEREÇO -->
+
+            <div class="container_endereco">
+               <input type="text" id="city" class="input_endereco" required>
+               <label for="city">Cidade</label>
+            </div>
+            <div class="container_endereco">
+               <input type="text" id="state" class="input_endereco" required>
+               <label for="state">Estado</label>
+            </div>
+            <div class="container_endereco">
+               <input type="text" id="address" class="input_endereco" required>
+               <label for="address">Endereço</label>
+            </div>
+
+         <button class="form_btn">enviar</button>
+      </form>
+   </div>
+
+</section>
+
+</body>
+</html>
